@@ -5,13 +5,13 @@ sudo apt install portaudio19-dev python3-devy
 
 ---
 
-## **1️⃣ Make sure your virtual environment is activated**
+## ** Make sure your virtual environment is activated**
 
 You already have `(venv)` in your prompt, so that’s good.
 
 ---
 
-## **2️⃣ Reinstall or bootstrap pip inside the venv**
+## **  Reinstall or bootstrap pip inside the venv**
 
 Run:
 
@@ -23,7 +23,7 @@ This will install `pip` inside your virtual environment.
 
 ---
 
-## **3️⃣ Upgrade pip**
+## ** Upgrade pip**
 
 ```bash
 python -m pip install --upgrade pip
@@ -31,7 +31,7 @@ python -m pip install --upgrade pip
 
 ---
 
-## **4️⃣ Install Streamlit**
+## ** Install Streamlit**
 
 ```bash
 pip install streamlit
@@ -47,7 +47,7 @@ streamlit --version
 
 ---
 
-## **5️⃣ Run Your App**
+## ** Run Your App**
 
 ```bash
 streamlit run voice_ml_demo.py
@@ -55,4 +55,4 @@ streamlit run voice_ml_demo.py
 
 ---
 
-### ✅ Notes
+### Notes

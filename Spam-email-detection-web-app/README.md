@@ -1,8 +1,8 @@
-📧 Spam Email Detection Web App
+Spam Email Detection Web App
 
 A simple yet effective web application for detecting spam emails using Logistic Regression and TF-IDF vectorization. The model is trained on a labeled dataset of emails and deployed using Flask, allowing users to check whether a message is spam or not through a web interface.
 
-🚀 Features
+Features
 
 Machine Learning Model: Logistic Regression with class balancing for better spam classification.
 
@@ -14,7 +14,7 @@ High Accuracy: Achieved ~98% accuracy on the test dataset.
 
 Visualization: Confusion matrix for model performance analysis.
 
-📂 Project Structure
+Project Structure
 ├── app.py                # Flask application  
 ├── email_spam_detection.pkl   # Trained ML model  
 ├── vectorizer.pkl        # Saved TF-IDF vectorizer  
@@ -24,7 +24,7 @@ Visualization: Confusion matrix for model performance analysis.
 ├── requirements.txt      # Project dependencies  
 └── README.md             # Project documentation  
 
-⚙️ Installation & Setup
+Installation & Setup
 
 Clone the repository
 
@@ -51,12 +51,12 @@ python app.py
 
 Open your browser at http://127.0.0.1:5000/
 
-🖼️ Screenshots
+Screenshots
 Input Form
 
 Prediction Result
 
-📊 Model Performance
+Model Performance
 
 Accuracy: ~98%
 
@@ -64,22 +64,22 @@ Precision (Spam detection): ~95%
 
 Confusion Matrix: Visualized using Seaborn for better interpretability.
 
-🔮 Future Improvements
+Future Improvements
 
-✅ Deploy on Heroku / Render for public access.
+Deploy on Heroku / Render for public access.
 
-✅ Add support for multiple models (Naive Bayes, SVM).
+Add support for multiple models (Naive Bayes, SVM).
 
-✅ Improve UI using Bootstrap / Tailwind CSS.
+Improve UI using Bootstrap / Tailwind CSS.
 
-✅ Extend dataset for more robust generalization.
+Extend dataset for more robust generalization.
 
-✅ Implement an API endpoint for integration with other services.
+Implement an API endpoint for integration with other services.
 
-🤝 Contributing
+Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests to enhance the app.
 
-📜 License
+License
 
 This project is licensed under the MIT License.

@@ -2,7 +2,7 @@
 ---
 
 ````markdown
-# 🎤 Voice Machine Learning Demo
+# Voice Machine Learning Demo
 
 This project is a **Streamlit app** that demonstrates a simple **voice-enabled machine learning application**.  
 Users can **speak a number**, and a **trained linear regression model** predicts an output.  
@@ -10,7 +10,7 @@ It also provides **text-to-speech feedback** and a **text fallback input**.
 
 ---
 
-## 🚀 Features
+## Features
 
 1. **Voice Input:** Records audio from your microphone using `sounddevice`.  
 2. **Speech Recognition:** Converts spoken audio to text with `SpeechRecognition` and Google Web API.  
@@ -21,7 +21,7 @@ It also provides **text-to-speech feedback** and a **text fallback input**.
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. Navigate to your project folder:
 
@@ -49,9 +49,9 @@ streamlit run voice_ml_demo.py
 
 ---
 
-## 📂 Code Explanation
+## Code Explanation
 
-### 1. **ML Model Training**
+### 1. ML Model Training
 
 ```python
 xs = np.array([-1, 0, 1, 2, 3, 4]).reshape(-1, 1)
@@ -66,7 +66,7 @@ model.fit(xs, ys)
 
 ---
 
-### 2. **Text-to-Speech Engine**
+### 2. Text-to-Speech Engine
 
 ```python
 engine = pyttsx3.init()
@@ -81,7 +81,7 @@ def speak(msg):
 
 ---
 
-### 3. **Voice Recording Function**
+### 3. Voice Recording Function
 
 ```python
 recording = sd.rec(int(duration * fs), samplerate=fs, channels=1)
@@ -94,7 +94,7 @@ sd.wait()
 
 ---
 
-### 4. **Convert to PCM WAV**
+### 4. Convert to PCM WAV
 
 ```python
 recording_int16 = np.int16(recording * 32767)
@@ -107,7 +107,7 @@ wav.write(temp_wav.name, fs, recording_int16)
 
 ---
 
-### 5. **Speech Recognition**
+### 5. Speech Recognition
 
 ```python
 recognizer = sr.Recognizer()
@@ -123,11 +123,11 @@ text = recognizer.recognize_google(audio)
 
 ---
 
-### 6. **Streamlit UI**
+### 6. Streamlit UI
 
 ```python
-st.title("🎤 Voice Machine Learning Demo")
-if st.button("🎙️ Speak a Number"):
+st.title("Voice Machine Learning Demo")
+if st.button(" Speak a Number"):
     text = listen_voice()
 ```
 
@@ -137,12 +137,12 @@ if st.button("🎙️ Speak a Number"):
 
 ---
 
-### 7. **Prediction & Feedback**
+### 7. Prediction & Feedback
 
 ```python
 number = float(text)
 prediction = model.predict(np.array([[number]]))[0]
-st.info(f"📈 Predicted Output: **{prediction}**")
+st.info(f" Predicted Output: **{prediction}**")
 speak(f"The model predicts {prediction}")
 ```
 
@@ -152,7 +152,7 @@ speak(f"The model predicts {prediction}")
 
 ---
 
-### 8. **Text Fallback Input**
+### 8. Text Fallback Input
 
 ```python
 number_input = st.text_input("Or type a number if voice fails:")
@@ -163,7 +163,7 @@ number_input = st.text_input("Or type a number if voice fails:")
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 1. Works best with a **built-in or USB microphone**.
 2. If voice recognition fails, type the number in the **fallback input**.
@@ -172,16 +172,16 @@ number_input = st.text_input("Or type a number if voice fails:")
 
 ---
 
-## 🏁 Usage
+## Usage
 
-1. Click **🎙️ Speak a Number**.
+1. Click ** Speak a Number**.
 2. Speak a number clearly (e.g., `3` or `4.5`).
 3. Wait for the prediction and TTS feedback.
 4. Or type a number if voice recognition fails.
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 * **Recording fails:** Ensure your microphone is accessible:
 
